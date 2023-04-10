@@ -1,0 +1,36 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 0.69em;
+}
+
+::-webkit-scrollbar-track {
+  background: #9e1f1f;
+}
+::-webkit-scrollbar-thumb {
+  background: rgb(144, 101, 101);
+  border-radius: 5rem;
+}
+
+:root {
+  --blue-facebook: #1877f2;
+  --white-space: #f0f2f5;
+  --hover-mass: #e7f3ff;
+  --size-icons: 2.1em;
+  --fs-sm: 0.5rem;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+/* 
+@media (max-width: 600px) {
+  body {
+    overflow-x: hidden;
+  }
+} ; */

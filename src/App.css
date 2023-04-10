@@ -1,0 +1,63 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none !important;
+  text-decoration: none !important;
+}
+
+.App {
+  background-color: #f0f2f5;
+  min-width: 280px;
+  /* top: 0; */
+
+  /* width: 100vw; */
+}
+
+.home_section {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* align-items: center; */
+  max-width: 1920px;
+  min-width: 280px;
+  margin: auto;
+  padding: 2px;
+  position: relative;
+  margin-top: var(--mg-fixed);
+  /* display: flex; */
+}
+
+.apps {
+  padding: 0;
+  margin: 0;
+  /* margin-top: 5px; */
+  min-width: 280px;
+  /* margin-top: 50px; */
+}
+
+/* @media (max-width: 400px) {
+  .apps {
+    margin-top: 60px;
+  }
+} */
+::-webkit-scrollbar {
+  width: 0.6666em;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 10px;
+}
+
+:root {
+  --blue-facebook: #1877f2;
+  --white-space: #f0f2f5;
+  --hover-mass: #e7f3ff;
+  --size-icons: 2.1em;
+  --fs-sm: 0.8rem;
+  --mg-fixed: 50px;
+}

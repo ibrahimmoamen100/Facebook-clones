@@ -1,0 +1,81 @@
+.MenuSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  /* overflow: hidden; */
+}
+.first-section .MenuSection {
+  width: clamp(150px, 17.5rem, 23rem);
+  position: fixed;
+  /* overflow: hidden; */
+}
+
+.menu_list {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 1rem 0rem;
+  width: 100%;
+}
+.menu_list > a {
+  /* background: green; */
+  margin: 0.08rem 0.2rem;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+
+  /* background: #dddd; */
+}
+.menu_list > a:hover {
+  background: #dddd;
+}
+.menu_list > a > img {
+  width: 2.3rem;
+  margin-right: 0.6rem;
+}
+.menu_list > .elzero-short > div,
+.menu_list > .unique-short > div {
+  width: 35px;
+  height: 35px;
+  border-radius: 5px;
+  margin-right: 0.6rem;
+  overflow: hidden;
+}
+.menu_list > .elzero-short > div img,
+.menu_list > .unique-short > div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.menu_list > a > span {
+  font-weight: bold;
+  font-size: 0.95rem;
+  color: rgb(53, 53, 53);
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.6px;
+}
+.short-cut-title {
+  font-weight: bold;
+  color: gray;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  margin: 0.5rem 0rem;
+  width: 90%;
+  border-top: 1px solid rgba(128, 128, 128, 0.301);
+}
+
+@media (max-width: 400px) {
+  .MenuSection {
+    position: relative;
+    top: 35px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+  }
+} ;

@@ -1,0 +1,223 @@
+html,
+body {
+  width: 100vw;
+}
+.navbar_top {
+  width: 100vw;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3px 1rem;
+  height: auto;
+  text-align: center;
+  box-shadow: 1px 1px 5px rgb(189, 189, 189);
+  z-index: 500 !important;
+  min-width: 270px;
+  position: fixed;
+  top: 0px;
+}
+
+.logo_search {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  /* background-color: green; */
+  display: flex;
+  max-width: 320px;
+}
+.logo_search > .logo {
+  margin-right: 0.4em;
+}
+.logo_search > .logo > i {
+  display: flex;
+  align-items: center;
+  font-size: 2.6em;
+  /* margin-right: 0.2em; */
+  background: -webkit-linear-gradient(#23aafb, #046de4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.search_part {
+  position: relative;
+  flex-shrink: 2;
+  flex-grow: 0.5;
+  max-width: 17rem;
+  min-width: 180px;
+  /* width: 17rem; */
+}
+.search_part > input {
+  background: transparent;
+  border: none;
+  outline: none;
+  background: #f0f2f5;
+  padding: 0.55em 1.6em;
+  padding-left: 2em;
+  border-radius: 2.5em;
+  font-size: 1rem;
+  width: 100%;
+}
+.search_part > input:placeholder-shown {
+  font-size: 1rem;
+  /* color: rgb(185, 185, 185); */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.search_part input:focus::-webkit-input-placeholder {
+  color: rgb(200, 200, 200);
+}
+
+.search_part i {
+  z-index: 2 !important;
+  /* padding: 5px; */
+  font-size: 1em;
+  position: absolute;
+  top: 0.9em;
+  left: 0.66em;
+  color: rgb(160, 160, 160);
+  cursor: pointer;
+}
+
+.menu {
+  padding: 10px 16px;
+  border-radius: 0.5rem;
+  margin: 0px 8px;
+  display: none;
+}
+
+.menu:hover {
+  background: rgb(233, 233, 233);
+}
+.menu.active i {
+  color: var(--blue-facebook);
+}
+.menu i {
+  /* background: gray; */
+  color: gray;
+  font-size: 1.6rem;
+}
+
+.last_list {
+  flex: 1;
+  /* background: green; */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: row;
+  margin: 0;
+  max-width: 280px;
+  /* min-width: 270px; */
+  /* width: 200px; */
+}
+
+.last_list > a {
+  /* padding: 5px; */
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background: #e4e6eb;
+  box-sizing: content-box;
+  margin-left: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.last_list > a:last-child i {
+  font-size: 1.5rem !important;
+  bottom: 2px;
+  position: absolute;
+}
+.last_list > a.active {
+  background-color: var(--hover-mass);
+  transition: 0.3s ease-in-out;
+}
+.last_list > a.active i {
+  color: var(--blue-facebook);
+}
+
+.last_list > a > i {
+  font-size: 1.1rem !important;
+  color: black;
+  padding: 10px;
+}
+
+@media (max-width: 800px) {
+  .navbar_top {
+    /* padding: 0; */
+    /* background: red; */
+  }
+  .search_part {
+    min-width: 40px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    flex: 0;
+    flex-shrink: 0;
+    flex-grow: 0;
+    padding: 0;
+    background-color: var(--white-space);
+    /* background-color: red; */
+    cursor: pointer;
+  }
+
+  .search_part input {
+    display: none;
+  }
+  .search_part > i {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* position: relative; */
+  }
+  .menu {
+    /* display: flex; */
+    margin: 0px;
+    padding: 10px;
+  }
+  .last_list {
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .menu {
+    display: flex;
+    margin: 0px;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 322px) {
+  .navbar_top {
+    padding: 0.5rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+  }
+  .search_part {
+    min-width: var(--size-icons);
+    width: var(--size-icons);
+    height: var(--size-icons);
+  }
+  .menu {
+    /* display: none; */
+    padding: 5px;
+  }
+  .last_list {
+    /* padding: 5px; */
+  }
+  .last_list > a {
+    /* padding: 5px; */
+    width: var(--size-icons);
+    height: var(--size-icons);
+  }
+  .logo_search > .logo {
+    margin-right: 0.2em;
+  }
+  .logo_search > .logo > i {
+    font-size: 2em;
+  }
+}

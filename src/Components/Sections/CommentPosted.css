@@ -1,0 +1,172 @@
+.comment-posted {
+  width: 100%;
+  min-width: 280px;
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  /* align-items: center; */
+  border-radius: 0.5rem;
+  background: rgb(255, 255, 255);
+  box-shadow: 2px 2px 5px rgba(204, 204, 204, 0.404);
+  margin-top: 20px;
+  /* overflow: hidden; */
+}
+
+.comment-titlebar {
+  width: 100%;
+  min-height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 10px 15px;
+}
+
+.user-img {
+  width: clamp(38px, 43px, 45px);
+
+  height: clamp(38px, 43px, 45px);
+  border-radius: 50%;
+  overflow: hidden;
+  cursor: pointer;
+  border: 1px solid #ddd;
+}
+.user-img:hover img {
+  background-color: rgba(0, 0, 0, 0.315);
+}
+
+.user-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.username-time {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-left: 10px;
+}
+.username-time > a {
+  font-size: 16px;
+  color: black;
+}
+.username-time > a:hover {
+  text-decoration: underline !important;
+}
+.username-time > span {
+  font-size: 12px;
+  color: gray;
+  cursor: pointer;
+  display: block;
+}
+.username-time > span:hover {
+  text-decoration: underline !important;
+}
+.username-time > span > i {
+  margin-left: 5px;
+}
+
+.option-comment {
+  margin-left: auto;
+  cursor: pointer;
+  width: clamp(30px, 35px, 40px);
+  height: clamp(30px, 35px, 40px);
+  /* background-color: gray; */
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.1s;
+}
+.option-comment:hover {
+  background-color: #eee;
+  transition: 0.1s linear;
+}
+.option-comment > i {
+  font-size: 1rem;
+  color: gray;
+}
+
+.comment-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  /* overflow: hidden; */
+}
+
+.comment-content > span {
+  padding: 8px;
+  font-size: 1rem;
+}
+.comment-content > img,
+video {
+  object-fit: cover;
+  width: 100%;
+  /* overflow: hidden; */
+}
+
+.like-comment {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0px 5px;
+  position: relative;
+}
+
+.like-comment img {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+.like-comment span {
+  color: gray;
+  cursor: pointer;
+  font-size: 1rem;
+}
+.like-comment span:hover {
+  text-decoration: underline !important;
+}
+
+#like {
+  background: rgba(0, 0, 0, 0.678);
+}
+
+.do-like-comment {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.39);
+  border-top: 1px solid rgba(128, 128, 128, 0.39);
+  padding: 5px 0px;
+  margin-top: 8px;
+}
+.do-like-comment > div {
+  flex: 1;
+  padding: 6px 2px;
+  text-align: center;
+  margin: 0px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.do-like-comment > div > * {
+  font-size: 1rem;
+}
+.do-like-comment > div:hover {
+  background: #eee;
+}
+
+@media (max-width: 320px) {
+  .do-like-comment > div > * {
+    font-size: var(--fs-sm);
+  }
+  .like-comment span {
+    font-size: var(--fs-sm);
+  }
+  .comment-content > span {
+    padding: 8px;
+    font-size: var(--fs-sm);
+  }
+} ;

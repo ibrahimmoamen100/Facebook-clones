@@ -1,0 +1,21 @@
+.error-page {
+  width: 200px;
+  height: 100%;
+  margin: auto;
+  max-width: 280px;
+  min-width: 270px;
+  margin-top: var(--mg-fixed);
+}
+.error-page span {
+  text-align: center;
+  color: red;
+  margin: auto;
+  display: flex;
+  /* padding: 2rem; */
+}
+
+.custom-alert {
+  width: 200px;
+  max-width: 280px;
+  min-width: 270px;
+}

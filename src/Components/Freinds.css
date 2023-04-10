@@ -1,0 +1,115 @@
+.freinds_part {
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  flex-shrink: 2;
+  /* flex-grow: 0.5; */
+  /* width: 22rem;
+  max-width: 22rem;
+  min-width: 15rem; */
+  width: 100%;
+  /* background: red; */
+  margin-top: var(--mg-fixed);
+  display: flex;
+  /* position: fixed; */
+  top: 20px;
+  padding: 0 1rem;
+  background: var(--white-space);
+  max-height: 100vh;
+
+  /* background: yellow; */
+}
+.freinds-titlebar {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  /* background: red; */
+  width: 280px;
+  border-top: 1px solid rgba(163, 163, 163, 0.315);
+  gap: 5px;
+
+  padding: 10px 0px;
+}
+.freinds-titlebar > span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.freinds-titlebar > span:not(:first-child) {
+  height: 30px;
+  width: 30px;
+  /* padding: 5px; */
+  /* margin: 0px 2px; */
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.freinds-titlebar > span:not(:first-child):hover {
+  background: #ddd;
+}
+.freinds-titlebar > span > i {
+  font-size: 1rem;
+  color: gray;
+}
+.freinds-titlebar > span:first-child {
+  justify-self: flex-start;
+  /* align-self: end; */
+  background: transparent;
+  margin: 0px;
+  margin-right: auto;
+  margin-left: 30px;
+  height: 0px;
+  width: 0px;
+}
+
+.freinds-list {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+
+  /* background: red; */
+  padding: 8px 0;
+}
+
+.freind-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 7px;
+  border-radius: 6px;
+  width: 100%;
+  align-items: center;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+.freind-item:hover {
+  background: #ddd;
+}
+
+.freinds-img-part {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 1px solid gray;
+}
+.freinds-img-part > img {
+  width: 100%;
+  height: 100%;
+}
+.freind-item > span {
+  margin-left: 8px;
+}
+/* @media (max-width: 1000px) {
+  .freinds-titlebar {
+    width: 250px;
+  }
+} */
+@media (max-width: 322px) {
+  .freinds-section {
+    min-width: 0rem;
+  }
+} ;

@@ -1,0 +1,52 @@
+ul.middle_list_icons {
+  margin-bottom: 0;
+}
+.middle_list_icons {
+  display: flex;
+  flex-direction: row !important;
+  justify-content: space-between !important;
+  /* background-color: #eee; */
+  margin: auto;
+  flex: 1.5 !important;
+  max-width: 43rem;
+}
+
+.middle_list_icons > a {
+  padding: 10px 8px;
+  /* margin-right: 5px; */
+  border-radius: 0.5rem;
+  flex-shrink: 2;
+  flex-grow: 1;
+  border-bottom: 3px solid transparent;
+}
+.middle_list_icons > a > i {
+  font-size: 1.5rem;
+  color: gray;
+}
+
+.middle_list_icons > a:hover {
+  background-color: #eee;
+  transition: 0.1s ease-in-out;
+}
+.middle_list_icons > a.active {
+  background-color: rgb(255, 255, 255);
+  transition: 0.1s ease-in-out;
+  border-bottom: 3px solid var(--blue-facebook);
+  border-radius: 0;
+}
+.middle_list_icons > a.active i {
+  color: #1877f2;
+  transition: 0.1s ease-in-out;
+}
+
+@media (max-width: 800px) {
+  .middle_list_icons {
+    /* display: none; */
+    margin-right: 2.5rem;
+  }
+}
+@media (max-width: 600px) {
+  .middle_list_icons {
+    display: none !important;
+  }
+}
